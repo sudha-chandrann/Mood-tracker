@@ -1,74 +1,86 @@
-Mini Employee Mood Tracker - Complete Documentation
+#  Mini Employee Mood Tracker
 
-Project Overview
+A simple and effective full-stack web app for tracking employee well-being through mood submissions.
 
-The Mini Employee Mood Tracker is a full stack web app designed to provide organizations with a way to track employee well-being, through a simple mood tracker. Employees are able to submit their mood in seconds and administrator's are able to see a clean dashboard with aggregated mood data.
+---
 
+##  Project Overview
 
-Key Features
+The **Mini Employee Mood Tracker** allows organizations to easily monitor their team’s emotional health. Employees can submit their mood with just a few clicks, and administrators get access to a real-time dashboard that visualizes mood trends and individual submissions.
 
-Basic Mood Submission: Ability to submit a mood based on 3 options (Happy, Neutral, Sad)
-Optional Comments: Employees can provide context for their mood submission
-Admin Dashboard: Ability to see real time all mood submissions
-Responsive: Desktop and mobile devices work seamlessly
-Clean UI: Modern interface leveraging Shadcn/UI components
-Dark/Light Mode: Optional light/dark mode theme for users
+---
 
-User Stories
+##  Key Features
 
-As an Employee: I want to be able to quickly submit my mood so my organization can know about team wellbeing 
-As an Admin: I want to view mood trends and individual entries to help make informed decisions regarding team support
+- **Basic Mood Submission**: Select between **Happy**, **Neutral**, and **Sad**.
+- **Optional Comments**: Add context to each submission.
+- **Admin Dashboard**: View real-time data of all mood entries.
+- **Responsive Design**: Seamless experience on both desktop and mobile.
+- **Clean UI**: Built with modern components from **Shadcn/UI**.
+- **Dark/Light Mode**: Theme toggle support for user preference.
 
-Technical Stack
+---
 
-Frontend
+##  User Stories
 
-Next.js 14/15: React framework with App Router
-TypeScript: Type-safe JavaScript development
-TailwindCSS: Utility-first CSS framework
-Shadcn/UI: High-quality React components
-Lucide React: Icon library for consistent iconography
+- **As an Employee**:  
+  I want to quickly submit my mood so my organization can stay aware of team wellbeing.
 
-Backend
+- **As an Admin**:  
+  I want to view mood trends and individual entries to help make informed decisions and support the team better.
 
-Next.js API Routes: Server-side API endpoints
-In-Memory Storage: Simple data persistence using TypeScript arrays
-TypeScript: Type-safe backend development
+---
 
-Development Tools
+##  Tech Stack
 
-ESLint: Code linting
-Prettier: Code formatting
-Git: Version control
-Vercel: Deployment platform
+### Frontend
+- **Next.js 14/15** – App Router-based React framework
+- **TypeScript** – Type-safe development
+- **TailwindCSS** – Utility-first styling
+- **Shadcn/UI** – Modern UI components
+- **Lucide React** – Lightweight and consistent icon set
 
-Project Structure
+### Backend
+- **Next.js API Routes** – Lightweight server-side endpoints
+- **In-Memory Storage** – Simple persistence using arrays
+- **TypeScript** – Shared across backend and frontend
+
+### Development Tools
+- **ESLint** – Linting for code quality
+- **Prettier** – Code formatting
+- **Git** – Version control
+- **Vercel** – Hosting and deployment
+
+---
+
+##  Project Structure
+
 mood-tracker/
 ├── app/
-│   ├── layout.tsx                 
-│   ├── page.tsx                  
-│   ├── globals.css               
-│   ├── mood/
-│   │   └── page.tsx              
-│   ├── admin/
-│   │   └── page.tsx              
-│   └── api/
-│       └── route.ts         
+│ ├── layout.tsx
+│ ├── page.tsx
+│ ├── globals.css
+│ ├── mood/
+│ │ └── page.tsx
+│ ├── admin/
+│ │ └── page.tsx
+│ └── api/
+│ └── route.ts
 ├── components/
-│   ├── ui/                    
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   ├── table.tsx
-│   │   ├── textarea.tsx
-│   │   └── toast.tsx
-│   ├── mood-modal.tsx             
-│   ├── navigation.tsx   
-│   ├── theme-provider.tsx          
-│   └── theme-toggle.tsx             
+│ ├── ui/
+│ │ ├── button.tsx
+│ │ ├── card.tsx
+│ │ ├── table.tsx
+│ │ ├── textarea.tsx
+│ │ └── toast.tsx
+│ ├── mood-modal.tsx
+│ ├── navigation.tsx
+│ ├── theme-provider.tsx
+│ └── theme-toggle.tsx
 ├── lib/
-│   ├── utils.ts  
-│   ├── mood.ts                
-│   └── helper.ts                                 
+│ ├── utils.ts
+│ ├── mood.ts
+│ └── helper.ts
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
