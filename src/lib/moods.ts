@@ -40,8 +40,6 @@ export function addMood({mood,comment}:{mood:mood,comment:string}): MoodEntry {
     mood:mood,
     comment:comment
   }
-  moodEntries.push(newEntry)
-  console.log('New mood added:', newEntry);
-  console.log('Total moods:', moodEntries.length); 
+  moodEntries.push(newEntry);
   return newEntry
 }

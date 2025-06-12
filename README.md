@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Mini Employee Mood Tracker - Complete Documentation
 
-## Getting Started
+Project Overview
 
-First, run the development server:
+The Mini Employee Mood Tracker is a full stack web app designed to provide organizations with a way to track employee well-being, through a simple mood tracker. Employees are able to submit their mood in seconds and administrator's are able to see a clean dashboard with aggregated mood data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Basic Mood Submission: Ability to submit a mood based on 3 options (Happy, Neutral, Sad)
+Optional Comments: Employees can provide context for their mood submission
+Admin Dashboard: Ability to see real time all mood submissions
+Responsive: Desktop and mobile devices work seamlessly
+Clean UI: Modern interface leveraging Shadcn/UI components
+Dark/Light Mode: Optional light/dark mode theme for users
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+User Stories
 
-## Learn More
+As an Employee: I want to be able to quickly submit my mood so my organization can know about team wellbeing 
+As an Admin: I want to view mood trends and individual entries to help make informed decisions regarding team support
 
-To learn more about Next.js, take a look at the following resources:
+Technical Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Frontend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Next.js 14/15: React framework with App Router
+TypeScript: Type-safe JavaScript development
+TailwindCSS: Utility-first CSS framework
+Shadcn/UI: High-quality React components
+Lucide React: Icon library for consistent iconography
 
-## Deploy on Vercel
+Backend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Next.js API Routes: Server-side API endpoints
+In-Memory Storage: Simple data persistence using TypeScript arrays
+TypeScript: Type-safe backend development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Development Tools
+
+ESLint: Code linting
+Prettier: Code formatting
+Git: Version control
+Vercel: Deployment platform
+
+Project Structure
+mood-tracker/
+├── app/
+│   ├── layout.tsx                 
+│   ├── page.tsx                  
+│   ├── globals.css               
+│   ├── mood/
+│   │   └── page.tsx              
+│   ├── admin/
+│   │   └── page.tsx              
+│   └── api/
+│       └── route.ts         
+├── components/
+│   ├── ui/                    
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── table.tsx
+│   │   ├── textarea.tsx
+│   │   └── toast.tsx
+│   ├── mood-modal.tsx             
+│   ├── navigation.tsx   
+│   ├── theme-provider.tsx          
+│   └── theme-toggle.tsx             
+├── lib/
+│   ├── utils.ts  
+│   ├── mood.ts                
+│   └── helper.ts                                 
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── next.config.js
+└── README.md
