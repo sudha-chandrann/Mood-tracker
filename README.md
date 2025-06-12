@@ -55,34 +55,29 @@ The **Mini Employee Mood Tracker** allows organizations to easily monitor their 
 
 ##  Project Structure
 
+```txt
 mood-tracker/
-├── app/
-│ ├── layout.tsx
-│ ├── page.tsx
-│ ├── globals.css
-│ ├── mood/
-│ │ └── page.tsx
-│ ├── admin/
-│ │ └── page.tsx
-│ └── api/
-│ └── route.ts
-├── components/
-│ ├── ui/
-│ │ ├── button.tsx
-│ │ ├── card.tsx
-│ │ ├── table.tsx
-│ │ ├── textarea.tsx
-│ │ └── toast.tsx
-│ ├── mood-modal.tsx
-│ ├── navigation.tsx
-│ ├── theme-provider.tsx
-│ └── theme-toggle.tsx
-├── lib/
-│ ├── utils.ts
-│ ├── mood.ts
-│ └── helper.ts
+├── app/layout.tsx
+├── app/page.tsx
+├── app/globals.css
+├── app/mood/page.tsx
+├── app/admin/page.tsx
+├── app/api/route.ts
+├── components/ui/button.tsx
+├── components/ui/card.tsx
+├── components/ui/table.tsx
+├── components/ui/textarea.tsx
+├── components/ui/toast.tsx
+├── components/mood-modal.tsx
+├── components/navigation.tsx
+├── components/theme-provider.tsx
+├── components/theme-toggle.tsx
+├── lib/utils.ts
+├── lib/mood.ts
+├── lib/helper.ts
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
 ├── next.config.js
 └── README.md
+```
